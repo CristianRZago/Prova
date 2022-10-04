@@ -49,9 +49,9 @@ para Satisfazer o usuario
 
 ## Critérios de Aceitação
 1)
-dado o preço e o desconto
-quando realizar a conta
-então informar o usuario
+dado o preço e o desconto, 
+quando realizar a conta, 
+então informar o usuario. <br>
 2)
 dado a pessoa e a calculadora
 quando juuntar os dois
