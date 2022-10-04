@@ -1,4 +1,6 @@
-# Prova
+## Prova
+
+# Introdução
 Este projeto foi realizado com o intuito de cumprir os requerimentos que meu professor (Lucas venez) propos, sendo esses requerimentos: 
 i) Defina o contexto do projeto e ao menos 3 funcionalidades descritas conforme o padrão de User Story (US) apresentado em https://www.scaledagileframework.com/story/. Cada US deve conter seu título, Critérios de Aceitação (CA) e Definition of Done (DoD);
 
@@ -17,11 +19,13 @@ Minha ideia foi criar um codigo python cheio de Fks(Chaves estrangeiras) para me
 Com a realização desta prova acredito que melhorei bastente em python e reaprendi muita coisa sobre sql e MER, como já dizia um filosófo, daqui pra frente é só pra tras (mas espero que daqui pra frente tudo melhore)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Funções
+
 1) CalcPrecoFinal
 2) Dono
 3) Calcular
 
-User Story
+# User Story
 1)
 como Pegando preço e desconto
 quero Valor final
@@ -50,9 +54,21 @@ quando realizar a conta
 então apresentar os resultados
 
 Definition of Done
-1)Apresentação do preço final para o usuario
-2)Apresentação da união para o usuario
-3)Apresentação do resultado para o usuario
+1)
+testes primerios
+checkin do codigo
+testes finais
+Cumprir os criterios de aceitação
+Apresentação do preço final para o usuario
+
+2)
+checkin do codigo
+Cumprir os criterios de aceitação
+Apresentação da união para o usuario
+3)
+checkin do codigo
+Cumprir os criterios de aceitação
+Apresentação do resultado para o usuario
 
 
 
