@@ -47,16 +47,16 @@ como Pegando 2 numeros<br>
 quero Resultado da conta que o usuario deseja<br>
 para Satisfazer o usuario<br>
 
-## Critérios de Aceitação <br>
+## Critérios de Aceitação
 1)
 dado o preço e o desconto<br>
 quando realizar a conta<br>
 então informar o usuario <br>
-2)
+2)<br>
 dado a pessoa e a calculadora<br>
 quando juuntar os dois<br>
 então informar a união<br>
-3)
+3)<br>
 dado os numeros<br>
 quando realizar a conta<br>
 então apresentar os resultados<br>
