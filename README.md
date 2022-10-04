@@ -92,7 +92,8 @@ atributos que iremos enviar posteriormente para o banco de dados através de sim
 prints pelo comando "input()". Após a coleta dessas variáveis é criada uma "engine" que vai ter como parametro a "URL", que vai possibilitar ele a entrar no banco de
 dados pela rota da URL, após isso, todas a tables do orm são deletadas e recriadas, continuando, é criado uma "Session", que vai receber um "sessionmaker" (ou criador
 de sessão) false, que vai entrar e sair do banco de dados inserindo a primeira atualização de cada dado (se tiver duas pessoas, só a primeira irá entrar), e
-finalizando o código, nós temos o Session.begin, que irá definir o começo da sessão, e dentro dele foi inserido as informações (com a ajuda do session.add) que foram pedidas anteriormente, e no fim do Session.begin todas as informações entram dentro do banco de dados.
+finalizando o código, nós temos o Session.begin, que irá definir o começo da sessão, e dentro dele foi inserido as informações (com a ajuda do session.add) que foram pedidas anteriormente, e no fim do Session.begin todas as informações entram dentro do banco de dados. Com relação as funções, todas elas estão sendo feitas juntamente
+a coleta de atributos.
 
 
 ## Imagens
