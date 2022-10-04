@@ -62,21 +62,21 @@ quando realizar a conta<br>
 então apresentar os resultados<br>
 
 ## Definition of Done
-1)
+1.)
 Cumprir os criterios de aceitação<br>
 testes primarios<br>
 checkin do codigo<br>
 testes finais<br>
 Aprovação do criador do código<br>
 
-2)
+2.)
 Cumprir os criterios de aceitação<br>
 testes primarios<br>
 checkin do codigo<br>
 testes finais<br>
 Aprovação do criador do código<br>
 
-3)
+3.)
 Cumprir os criterios de aceitação<br>
 testes primarios<br>
 checkin do codigo<br>
