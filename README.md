@@ -4,7 +4,7 @@
 ### Ideia
 
 Minha idéia foi criar um código python cheio de Fks(Chaves estrangeiras) para me desafiar e forçar a aprender python, porem com o decorrer do projeto fui percebendo
-que ainda não era a hora de usar as FKs que era divertido programar em python.Já para a realização do projeto em si, foi criado algo bem abstrato, onde temos 3 funções
+que ainda não era a hora de usar as FKs e que era divertido programar em python.Já para a realização do projeto em si, foi criado algo bem abstrato, onde temos 3 funções
 (preço final de um produto, calculadora e seu dono ligados e uma calculadora) e deixando espaço para a introdução para as FKs e novas funcionalidades.
 
 ### Motivo/Objetivos
