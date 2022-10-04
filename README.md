@@ -47,7 +47,7 @@ como Pegando 2 numeros<br>
 quero Resultado da conta que o usuario deseja<br>
 para Satisfazer o usuario<br>
 
-## Critérios de Aceitação
+## Critérios de Aceitação <br>
 1)
 dado o preço e o desconto<br>
 quando realizar a conta<br>
@@ -62,21 +62,21 @@ quando realizar a conta<br>
 então apresentar os resultados<br>
 
 ## Definition of Done
-1.)
+1)
 Cumprir os criterios de aceitação<br>
 testes primarios<br>
 checkin do codigo<br>
 testes finais<br>
 Aprovação do criador do código<br>
 
-2.)
+2)
 Cumprir os criterios de aceitação<br>
 testes primarios<br>
 checkin do codigo<br>
 testes finais<br>
 Aprovação do criador do código<br>
 
-3.)
+3)
 Cumprir os criterios de aceitação<br>
 testes primarios<br>
 checkin do codigo<br>
