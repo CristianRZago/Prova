@@ -29,59 +29,59 @@ Após a realização deste projeto cheguei a conclusão que ainda tenho um longo
 
 ## Funções
 
-1) CalcPrecoFinal
-2) Dono
-3) Calcular
+1) CalcPrecoFinal<br>
+2) Dono<br>
+3) Calcular<br>
 
 ## User Story
-1)
-como Pegando preço e desconto
-quero Valor final
-para que Informar o preço real
-2)
-como Juntando Pessoa e calculadora
-quero Identificar de quem é a calculadora
-para que Para caso alguem perca sua calculadora, ela esteja registrada
-3)
-como Pegando 2 numeros
-quero Resultado da conta que o usuario deseja
-para Satisfazer o usuario
+1)<br>
+como Pegando preço e desconto <br>
+quero Valor final<br>
+para que Informar o preço real<br>
+2)<br>
+como Juntando Pessoa e calculadora<br>
+quero Identificar de quem é a calculadora<br>
+para que Para caso alguem perca sua calculadora, ela esteja registrada<br>
+3)<br>
+como Pegando 2 numeros<br>
+quero Resultado da conta que o usuario deseja<br>
+para Satisfazer o usuario<br>
 
 ## Critérios de Aceitação
 1)
-dado o preço e o desconto, 
-quando realizar a conta, 
-então informar o usuario. <br>
+dado o preço e o desconto<br>
+quando realizar a conta<br>
+então informar o usuario <br>
 2)
-dado a pessoa e a calculadora
-quando juuntar os dois
-então informar a união
+dado a pessoa e a calculadora<br>
+quando juuntar os dois<br>
+então informar a união<br>
 3)
-dado os numeros
-quando realizar a conta
-então apresentar os resultados
+dado os numeros<br>
+quando realizar a conta<br>
+então apresentar os resultados<br>
 
 ## Definition of Done
 1)
-Cumprir os criterios de aceitação
-testes primarios
-checkin do codigo
-testes finais
-Aprovação do criador do código
+Cumprir os criterios de aceitação<br>
+testes primarios<br>
+checkin do codigo<br>
+testes finais<br>
+Aprovação do criador do código<br>
 
 2)
-Cumprir os criterios de aceitação
-testes primarios
-checkin do codigo
-testes finais
-Aprovação do criador do código
+Cumprir os criterios de aceitação<br>
+testes primarios<br>
+checkin do codigo<br>
+testes finais<br>
+Aprovação do criador do código<br>
 
 3)
-Cumprir os criterios de aceitação
-testes primarios
-checkin do codigo
-testes finais
-Aprovação do criador do código
+Cumprir os criterios de aceitação<br>
+testes primarios<br>
+checkin do codigo<br>
+testes finais<br>
+Aprovação do criador do código<br>
 
 ## Descrição do código
 Antes de começarmos a falar do código, é importante você ter instalado as bibliotecas "mysql-connector-python" e "sqlalchemy", além de modificar a URL com base em seu banco de dados e criar a database orm.
