@@ -1,7 +1,7 @@
 # Prova
 
 ## Introdução
-### ideia
+### Ideia
 
 Minha ideia foi criar um codigo python cheio de Fks(Chaves estrangeiras) para me desafiar e forçar a aprender python, porem com o decorrer do projeto fui percebendo
 que ainda não era a hora de usar as FKs que era divertido programar em python.Já para a realização do projeto em si, foi criado algo bem abstrato, onde temos 3 funções
