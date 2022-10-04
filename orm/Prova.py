@@ -10,7 +10,6 @@ class Pessoa(Base):
     __tablename__ = "Pessoa"
     id = Column(Integer, primary_key=True)
     nome = Column(String(150), nullable=False)
-    Calculadoras = relationship("Calculadora")
 
 
 class Marca(Base):
@@ -18,32 +17,29 @@ class Marca(Base):
     id = Column(Integer, primary_key=True)
     Nome = Column(String(150), nullable=False)
     Endereco = Column(String(150), nullable=False)
-    Estoque = relationship("Estoque_Produto")
 
 
 class Loja(Base):
     __tablename__ = "Loja"
     id = Column(Integer, primary_key=True)
-    nome = Column(String(150), nullable=False)
+    Nome = Column(String(150), nullable=False)
     Endereco = Column(String(150), nullable=False)
-    Prods = relationship("Prod_Loja_Desconto")
 
 
 class Estoque_Produto(Base):
     __tablename__ = "Estoque_Produto"
     id = Column(Integer, primary_key=True)
-    Marca_id = Column(Integer, ForeignKey("Marca.id"))
+    Marca_id = Column(Integer, nullable=False)
     Preco = Column(Float, nullable=False)
     Nome = Column(String(150), nullable=False)
     Quantidade = Column(Integer, nullable=False)
-    Mercado = relationship("Prod_Loja_Desconto")
 
 
 class Prod_Loja_Desconto(Base):
     __tablename__ = "Prod_Loja_Desconto"
     id = Column(Integer, primary_key=True)
-    Loja_id = Column(Integer, ForeignKey("Loja.id"))
-    Estoque_Produto_id = Column(Integer, ForeignKey("Estoque_Produto.id"))
+    Loja_id = Column(Integer, nullable=False)
+    Estoque_Produto_id = Column(Integer, nullable=False)
     NovoPreco = Column(Float, nullable=False)
     Desconto = Column(Float, nullable=False)
 
@@ -51,8 +47,8 @@ class Prod_Loja_Desconto(Base):
 class Calculadora(Base):
     __tablename__ = "Calculadora"
     id = Column(Integer, primary_key=True)
-    Pessoa_id = Column(Integer, ForeignKey("Pessoa.id"))
-    Prod_Loja_Desconto_id = Column(Integer, ForeignKey("Prod_Loja_Desconto.id"))
+    Pessoa_id = Column(Integer, nullable=False)
+    Prod_Loja_Desconto_id = Column(Integer, nullable=False)
     Nome = Column(String(150), nullable=False)
     DiaCompra = Column(Integer, nullable=False)
 
@@ -60,7 +56,7 @@ class Calculadora(Base):
 class Historico(Base):
     __tablename__ = "Historico"
     id_Historico = Column(Integer, primary_key=True)
-    Calculadora_id = Column(Integer, ForeignKey("Calculadora.id"))
+    Calculadora_id = Column(Integer, nullable=False)
     Numero1 = Column(Float, nullable=False)
     Numero2 = Column(Float, nullable=False)
     Funcao = Column(String(150), nullable=False)
@@ -68,25 +64,21 @@ class Historico(Base):
 
 
 def main():
+    print('criação da marca')
     marca1 = input("Digite o nome da marca: ")
-    MarcaEndereco = input("Digite o endereco da marca: ")
+    MarcaEndereco = input("Digite o endereco da marca (somente rua): ")
 
-    Loja1 = input("Digite o nome da loja: ")
-    LojaEndereco = input("Digite o endereco da loja (somente a rua): ")
-
-    Pessoa1 = input("De um nome a pessoa: ")
-
-    DiaCompra1 = int(input("Dia da compra da calculadora(apenas dia): "))
-    NomeCalc = input("De um nome a sua calculadora:D")
-
-    print(f'a(o) {NomeCalc} pertence ao(a) {Pessoa1}')
-
+    print('\n\nAqui temos a criação do produto da marca criada anteriormente')
     nome1 = input("De um nome a um produto: ")
     preco1 = float(input("Preco: "))
     quantidade1 = int(input("Quantidade: "))
 
-    novoPreco1 = float(input("De o preco que a loja cobrara: "))
+    print('\n\nCriação da loja')
+    Loja1 = input("Digite o nome da loja: ")
+    LojaEndereco = input("Digite o endereco da loja (somente a rua): ")
 
+    print('\n\nAtrelando o produto criado anteriormente com a loja criada agora')
+    novoPreco1 = float(input("De o novo preco que a loja cobrara: "))
     desconto = input("Desconto? (sim ou nao)")
     if desconto == "sim":
         global desconto1
@@ -100,6 +92,15 @@ def main():
 
     QuantidadeLoja1 = int(input("Digite a quantidade que a loja possui: "))
 
+    print('\n\nAqui criamos a pessoa e atrelamos ela a uma calculadora (e damos nome a ela :D) ')
+    Pessoa1 = input("De um nome a pessoa: ")
+
+    DiaCompra1 = int(input("Dia da compra da calculadora(apenas dia): "))
+    NomeCalc = input("De um nome a sua calculadora: ")
+
+    print(f'a(o) {NomeCalc} pertence ao(a) {Pessoa1}')
+
+    print('\n\nAqui nós iremos ultilizar a calculadora')
     Funcao = input("Digite a funcao que voce quer (com 2 numeros, podendo ser: soma, subtracao ou multiplicacao): ")
     num1 = float(input("Digite o primeiro numero: "))
     num2 = float(input("Digite o segundo numero: "))
