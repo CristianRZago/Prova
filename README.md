@@ -3,7 +3,7 @@
 ## Introdução
 ### Ideia
 
-Minha ideia foi criar um codigo python cheio de Fks(Chaves estrangeiras) para me desafiar e forçar a aprender python, porem com o decorrer do projeto fui percebendo
+Minha idéia foi criar um código python cheio de Fks(Chaves estrangeiras) para me desafiar e forçar a aprender python, porem com o decorrer do projeto fui percebendo
 que ainda não era a hora de usar as FKs que era divertido programar em python.Já para a realização do projeto em si, foi criado algo bem abstrato, onde temos 3 funções
 (preço final de um produto, calculadora e seu dono ligados e uma calculadora) e deixando espaço para a introdução para as FKs e novas funcionalidades.
 
@@ -85,14 +85,14 @@ Aprovação do criador do código<br>
 
 ## Descrição do código
 Antes de começarmos a falar do código, é importante você ter instalado as bibliotecas "mysql-connector-python" e "sqlalchemy", além de modificar a URL com base em seu banco de dados e criar a database orm.
-Logo no começo do código nós importamos algumas funções das bibliotecas que instalamos para usarmos na criação das classes e ne ligação com o banco de dados, após isso
-nós definimos a "URL", que é uma rota que vai acessar nosso banco de dados, e definimos "Base", onde base recebe declarative_base() (para ficar mais facil de chamar
+Logo no começo do código nós importamos algumas funções das bibliotecas que instalamos para usarmos na criação das classes e na ligação com o banco de dados, após isso
+nós definimos a "URL", que é uma rota que vai acessar nosso banco de dados, e definimos "Base", onde base recebe declarative_base() (para ficar mais fácil de chamar
 ela na criação das tables), após isso nós criamos as nossas tables, onde elas tem como parâmetro "Base", Continuando, nesta parte do código nós criamos e coletamos os
-atributos que iremos enviar posteriormente para o banco de dados atravéz de simples váriaveis e if elses, ajudando o usuario a identificar cada atributo atravéz de
-prints pelo comando "input()". Após a coleta dessas váriaveis é criada uma "engine" que vai ter como parametro a "URL", que vai possibilitar ele a entrar no banco de
+atributos que iremos enviar posteriormente para o banco de dados através de simples váriaveis e if elses, ajudando o usuario a identificar cada atributo através de
+prints pelo comando "input()". Após a coleta dessas variáveis é criada uma "engine" que vai ter como parametro a "URL", que vai possibilitar ele a entrar no banco de
 dados pela rota da URL, após isso, todas a tables do orm são deletadas e recriadas, continuando, é criado uma "Session", que vai receber um "sessionmaker" (ou criador
 de sessão) false, que vai entrar e sair do banco de dados inserindo a primeira atualização de cada dado (se tiver duas pessoas, só a primeira irá entrar), e
-finalizando o código, nós temos o Session.begin, que irá definir o começo da sessão, e dentro dele foi inserido as informações (com a ajuda do session.add) que foram pedidas anteriormente, e no fim do Session.begin todas as informações entrão dentro do banco de dados.
+finalizando o código, nós temos o Session.begin, que irá definir o começo da sessão, e dentro dele foi inserido as informações (com a ajuda do session.add) que foram pedidas anteriormente, e no fim do Session.begin todas as informações entram dentro do banco de dados.
 
 
 ## Imagens
